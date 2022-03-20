@@ -1,23 +1,31 @@
 {
-  "name": "diplom",
+  "name": "site-auth",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "server": "nodemon app.js"
+    "server": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "izuchukwu1",
   "license": "ISC",
   "dependencies": {
-    "config": "^3.3.7",
-    "express": "^4.17.2",
-    "mongoose": "^6.2.1",
-    "mongose": "^0.0.2-security"
-  },
-  "devDependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.1",
     "concurrently": "^7.0.0",
-    "nodemon": "^2.0.15"
+    "config": "^3.3.7",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.2",
+    "joi": "^13.0.1",
+    "mongoose": "^4.11.12",
+    "morgan": "^1.8.1",
+    "nodemon": "^2.0.15",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
   }
 }
