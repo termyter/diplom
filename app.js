@@ -1,6 +1,7 @@
 const express = require('express')
 const config = require('config')
 const mongoose = require('mongoose')
+const morgan = require("morgan");
 
 const app = express()
 
@@ -17,9 +18,11 @@ async function start(){
     }
 }
 
-app.use('/', require('./routes/index'))
+app.use('/123', require('./routes/index'))
 app.use(morgan('dev'))
 
-
+app.get('/', (req, res) => {
+    res.send({ message: 'Hello WWW!' });
+});
 
 app.listen(PORT, () => console.log(` on port ${PORT}...`));
